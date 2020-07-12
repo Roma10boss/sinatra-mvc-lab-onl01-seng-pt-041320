@@ -6,5 +6,5 @@ class App < Sinatra::Base
   end 
   
   post '/piglatanize' do 
-    user_input = params [:user_phrase]
+    user_word = params [:user_phrase]
 end
