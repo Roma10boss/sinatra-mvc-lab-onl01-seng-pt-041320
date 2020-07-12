@@ -7,4 +7,6 @@ class App < Sinatra::Base
   
   post '/piglatanize' do 
     user_word = params [:user_phrase]
+    word = Piglatanize.new 
+    
 end
