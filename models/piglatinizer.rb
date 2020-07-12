@@ -1,3 +1,3 @@
 class PigLatinizer 
-  def 
+  def piglanize(user_word)
 end 
