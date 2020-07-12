@@ -8,5 +8,7 @@ class App < Sinatra::Base
   post '/piglatanize' do 
     user_word = params [:user_phrase]
     word = Piglatanize.new 
-    
+    @pig_latinized_word = word.to_pig_latin(user_word)
+
+    erb :pit_latin
 end
