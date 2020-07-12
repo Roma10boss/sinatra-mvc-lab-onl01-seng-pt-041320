@@ -1,16 +1,17 @@
 require_relative 'config/environment'
-require 'pry'
 
 class App < Sinatra::Base
 
-  get '/' do
-    erb :user_input
-  end
+get '/' do
+  erb :user_input
+end 
 
-  post '/piglatinize' do
-    @text = params[:user_phrase]
-    @piglatinizer = PigLatinizer.new
-    erb :piglatinize
-  end
+post '/piglatinize' do 
+
+  ring = PigLatinizer.new
+  @string = ring.pig(params[:user_phrase])  
+  erb :piglatinize
 
 end 
+
+end
