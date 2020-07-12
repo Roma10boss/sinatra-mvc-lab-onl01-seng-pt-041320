@@ -9,3 +9,4 @@ class PigLatinizer
     end
     latinized_word
 end 
+end 
